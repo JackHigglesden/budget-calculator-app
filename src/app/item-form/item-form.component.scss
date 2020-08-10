@@ -1,0 +1,27 @@
+@import '../../main-styles.scss';
+
+form {
+  padding: 20px;
+  .input {
+    border-color: $grey-light;
+    &.input--amount {
+      width: 110px;
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+    &.input--quantity {
+      width: 110px;
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+  button {
+    width: 100%;
+    margin-top: 0px;
+    @media only screen and (max-width: 768px) {
+      margin-top: 15px;
+    }
+  }
+}

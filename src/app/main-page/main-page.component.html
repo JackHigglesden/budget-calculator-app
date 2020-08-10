@@ -1,0 +1,17 @@
+<div class="top-bar">
+  <h1>Budget Calculator</h1>
+</div>
+
+<div class="budget-banner">
+  <h2 class="positive" [ngClass]="{'negative': totalBudget < 0, 'positive': totalBudget > 0}">{{ totalBudget }}</h2>
+</div>
+
+<section class="item-form">
+  <div class="item-form-container">
+    <app-item-form (formSubmit)="addItem($event)"></app-item-form>
+  </div>
+</section>
+
+<hr>
+
+<app-item-list [itemCards]="itemCards" (delete)="deleteItem($event)" (update)="updateItem($event)"></app-item-list>

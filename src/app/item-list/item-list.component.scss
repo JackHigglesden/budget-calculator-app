@@ -1,0 +1,75 @@
+@import '../../main-styles.scss';
+
+.item-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+
+  @media only screen and (max-width: 768px) {
+    padding: 20px;;
+  }
+
+  .item-list-container {
+    display: flex;
+    max-width: 680px;
+    height: 100%;
+    width: 100%;
+
+    @media only screen and (max-width: 768px) {
+      display: block;
+    }
+
+    .item-list__income--column, .item-list__expenses--column {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 0;
+      flex-grow: 1;
+
+      @media only screen and (max-width: 768px) {
+        display: block;
+      }
+
+      h3 {
+        font-family: 'Lato';
+        font-size: 1.5rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+
+        @media only screen and (max-width: 768px) {
+          font-size: 1.125rem;
+        }
+      }
+
+      .item-card-list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+      }
+    }
+
+    .item-list__income--column {
+      margin-right: 35px;
+
+      @media only screen and (max-width: 768px) {
+        margin-right: 0px;
+      }
+
+      h3 {
+        color: $positive
+      }
+    }
+
+    .item-list__expenses--column {
+      margin-right: 35px;
+
+      @media only screen and (max-width: 768px) {
+        margin-right: 0px;
+      }
+
+      h3 {
+        color: $negative
+      }
+    }
+  }
+}

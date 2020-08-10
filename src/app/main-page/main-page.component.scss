@@ -1,0 +1,70 @@
+@import '../../main-styles.scss';
+
+.top-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background: linear-gradient(75deg, $primary-color, rgb(88, 155, 218));
+
+  h1 {
+    font-size: 1.125rem;
+    font-family: 'Lato';
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: $tertiary-color;
+    letter-spacing: 1px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    height: 50px;
+
+    h1 {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+.budget-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background: $tertiary-color;
+
+  h2 {
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+    &.positive {
+        color: lighten($positive, 12%);
+      }
+
+      &.negative {
+        color: lighten($negative, 12%);
+      }
+  }
+
+  @media only screen and (max-width: 768px) {
+    height: 100px;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.item-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .item-form-container {
+    width: 730px;
+  }
+}
+
+hr {
+  margin-top: 0px;
+}
