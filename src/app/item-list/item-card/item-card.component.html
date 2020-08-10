@@ -1,0 +1,16 @@
+<div class="root">
+  <div class="item-card" (click)="onCardClick()" [ngClass]="{'item-card--income': item.amount >= 0, 'item-card--expenses': item.amount < 0}">
+    <div class="item-card__description">
+      <p>{{item.description}}</p>
+    </div>
+    <div class="item-card__amount">
+      <p>{{item.amount}}</p>
+    </div>
+    <div class="item-card__quantity">
+      <p>x{{item.quantity}}</p>
+    </div>
+  </div>
+  <div class="x-icon-button" (click)="onXButtonClick()">
+    <div class="delete-icon">x</div>
+  </div>
+</div>

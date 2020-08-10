@@ -1,0 +1,20 @@
+<section class="item-list">
+  <div class="item-list-container">
+    <div class="item-list__income--column">
+      <h3 *ngIf="itemCards.length != 0">Income</h3>
+      <div class="item-card-list">
+        <div *ngFor="let item of itemCards">
+          <app-item-card *ngIf="item.amount >= 0" [item]="item" (xButtonClick)="onDeleteButtonClicked(item)" (cardClick)="onCardClicked(item)"></app-item-card>
+        </div>
+      </div>
+    </div>
+    <div class="item-list__expenses--column">
+      <h3 *ngIf="itemCards.length != 0">Expenses</h3>
+      <div class="item-card-list">
+        <div *ngFor="let item of itemCards">
+          <app-item-card *ngIf="item.amount < 0" [item]="item" (xButtonClick)="onDeleteButtonClicked(item)" (cardClick)="onCardClicked(item)"></app-item-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
