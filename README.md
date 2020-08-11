@@ -1,17 +1,11 @@
 # Budget Calculator App
-Budget Calculator App based on <a href="https://www.youtube.com/watch?v=sU4z4Ti-8OQ" target="_blank">Devstackr Tutorial</a>
+Budget Calculator App adapted from <a href="https://www.youtube.com/watch?v=sU4z4Ti-8OQ" target="_blank">Devstackr Tutorial</a>
 
-This project was created using Angular and designed to further my knowledge of Typescript.
-I have used this project to also further my knowledge of the bulma css framework aswell as the BEM methodology
+This app is designed to calculate the total budget of a user, using a list of their incomes and expenditures.
 
-Items Complete (Added Functionality):
-* Add Quantity functionality
-* Make Mobile Friendly by applying media queries
-* Convert files to BEM methodology
-* Change color variable names to be more in sync with their uses in the app   
-* Add in functionality to remove income and expense titles on UI when no items currently exist
+The user can add items to their list, inputting a small description of their item; amount spent/saved and the quantity of that item. 
+The app will add this item to the appropriate list in addition to adding the amount of that item to the total amount.
+The user should add a '-' to the beginning of an item to indicate an expenditure.
 
-To Do:
-
-* Have the ability to add only the income column title if only income items have been added (Also apply to expense)
-* Adding animation to total amount bar showing the addition of income to the total amount
+By clicking on an item featured in the list the user can edit the details of an item. Once saved the item information as well as total amount will update.
+Users are also able to remove an item by hovering over an item and clicking on the 'x' icon.
