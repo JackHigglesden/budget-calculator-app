@@ -9,3 +9,5 @@ The user should add a '-' to the beginning of an item to indicate an expenditure
 
 By clicking on an item featured in the list the user can edit the details of an item. Once saved the item information as well as total amount will update.
 Users are also able to remove an item by hovering over an item and clicking on the 'x' icon.
+
+Also Robert is cooli.
